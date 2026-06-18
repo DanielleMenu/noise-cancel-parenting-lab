@@ -12,6 +12,20 @@ font-family: Inter, sans-serif;
 line-height: 1.7;
 }
 
+.home-page h1,
+.home-page h2,
+.home-page h3,
+.home-page h4,
+.home-page h5,
+.home-page h6 {
+    font-family: Inter, sans-serif;
+}
+
+.home-page .about-mission h2,
+.home-page .waitlist-copy h2 {
+    font-family: Inter, sans-serif;
+}
+
 header {
 padding: 24px 10%;
 }
@@ -78,7 +92,9 @@ color: #1F2328;
 }
 
 .hero h1 {
+    font-family: Inter, sans-serif;
     font-size: 4rem;
+    font-weight: 700;
     margin-bottom: 24px;
 }
 
@@ -159,6 +175,25 @@ text-align: center;
 max-width: 800px;
 margin: 0 auto;
 text-align: center;
+}
+
+.about-lab {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 10% 10px;
+}
+
+.about-lab .mission-copy-box {
+    text-align: left;
+}
+
+.about-lab-list {
+    margin: 0 0 18px 1.2rem;
+    padding: 0;
+}
+
+.about-lab-list li {
+    margin-bottom: 8px;
 }
 
 .about-mission p {
@@ -282,6 +317,15 @@ opacity: 0.9;
     margin-bottom: 20px;
 }
 
+.product-page h1,
+.product-page h2,
+.product-page h3,
+.product-page h4,
+.product-page h5,
+.product-page h6 {
+    font-family: Inter, sans-serif !important;
+}
+
 .product-page .coming-grid {
     margin-top: 20px;
 }
@@ -343,6 +387,11 @@ text-align: center;
 .products-preview {
 padding: 60px 10%;
 text-align: center;
+}
+
+.products-preview .coming-grid {
+    grid-template-columns: minmax(260px, 620px);
+    justify-content: center;
 }
 
 .section-intro {
@@ -716,7 +765,8 @@ nav {
     margin-top: 12px;
 }
 
-.hero-pills span {
+.hero-pills span,
+.hero-pills a {
     background: #fff;
     color: #1F2328;
     border-radius: 999px;
@@ -724,6 +774,11 @@ nav {
     font-size: 0.9rem;
     font-weight: 600;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    text-decoration: none;
+}
+
+.hero-pills a:hover {
+    background: #F9E4D4;
 }
 
 .hero-highlights {
@@ -774,6 +829,16 @@ nav {
     margin-bottom: 0;
 }
 
+.product-gallery .section-heading h2,
+.about-mission > h2,
+.who-section .section-heading h2,
+.waitlist-copy h2,
+.faq-section .section-heading h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+}
+
 .product-gallery {
     padding: 40px 10% 60px;
 }
@@ -809,8 +874,10 @@ nav {
 }
 
 .gallery-card h3 {
+    font-family: Inter, sans-serif;
     margin: 0 0 10px;
     font-size: 1.4rem;
+    font-weight: 700;
 }
 
 .gallery-card p {
@@ -852,8 +919,10 @@ nav {
 }
 
 .comparison-card h3 {
+    font-family: Inter, sans-serif;
     margin: 0 0 12px;
     font-size: 1.4rem;
+    font-weight: 700;
 }
 
 .comparison-card p {
@@ -893,8 +962,11 @@ nav {
 .checklist-panel {
     background: #fff;
     border-radius: 18px;
-    padding: 28px;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 20px 24px;
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
+    text-align: left;
 }
 
 .checklist-list {
@@ -902,7 +974,9 @@ nav {
     padding: 0;
     margin: 0;
     display: grid;
-    gap: 14px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 26px;
+    row-gap: 10px;
 }
 
 .checklist-list li {
@@ -910,6 +984,40 @@ nav {
     line-height: 1.6;
     color: #1F2328;
     padding-left: 0;
+    text-align: left;
+}
+
+.mission-copy-box {
+    max-width: 860px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
+}
+
+.mission-copy-box p {
+    margin-bottom: 16px;
+}
+
+.mission-copy-box p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 780px) {
+    .checklist-panel {
+        max-width: 100%;
+        padding: 18px 18px;
+    }
+
+    .checklist-list {
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+    }
+
+    .mission-copy-box {
+        padding: 22px 18px;
+    }
 }
 
 .feature-grid {
@@ -940,8 +1048,10 @@ nav {
 }
 
 .feature-card h3 {
+    font-family: Inter, sans-serif;
     margin: 0 0 10px;
     font-size: 1.1rem;
+    font-weight: 700;
 }
 
 .feature-card p {
@@ -949,32 +1059,177 @@ nav {
 }
 
 .waitlist-section {
-    padding: 40px 10% 60px;
+    padding: 14px 10% 18px;
+}
+
+.product-page .waitlist-section {
+    padding-top: 10px;
+    padding-bottom: 14px;
 }
 
 .waitlist-panel {
     background: #fff;
     border-radius: 24px;
     display: grid;
-    grid-template-columns: 0.95fr 1.05fr;
-    gap: 32px;
-    padding: 48px;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 18px;
+    max-width: 720px;
+    margin: 0 auto;
     box-shadow: 0 18px 40px rgba(0, 0, 0, 0.06);
-    align-items: center;
+    align-items: start;
 }
 
 .waitlist-copy {
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 .waitlist-copy h2 {
-    text-align: left;
-    margin-bottom: 16px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.waitlist-copy p {
+    margin: 0;
 }
 
 .waitlist-form-wrap {
-    max-width: 460px;
-    margin-left: auto;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    justify-self: center;
+}
+
+#mlb2-42724321.ml-form-embedContainer {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* Tighten MailerLite embed spacing to keep this area as a compact CTA. */
+#mlb2-42724321.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody,
+#mlb2-42724321.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody {
+    padding: 12px 14px 0 14px !important;
+}
+
+#mlb2-42724321.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent,
+#mlb2-42724321.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent {
+    margin: 0 0 10px 0 !important;
+}
+
+#mlb2-42724321.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-formContent,
+#mlb2-42724321.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow {
+    margin: 0 0 10px 0 !important;
+}
+
+#mlb2-42724321.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit {
+    margin: 0 0 8px 0 !important;
+}
+
+#mlb2-42724321.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow {
+    margin: 0 0 8px 0 !important;
+}
+
+#mlb2-42724321.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent h4,
+#mlb2-42724321.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent h4 {
+    margin: 0 0 8px 0 !important;
+}
+
+/* Force a visible native checkbox for the opt-in row. */
+#mlb2-42724321.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .checkbox {
+    display: flex !important;
+    align-items: flex-start;
+    gap: 10px;
+    min-height: 0;
+    padding-left: 0 !important;
+}
+
+#mlb2-42724321.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow input[type="checkbox"] {
+    position: static !important;
+    z-index: auto !important;
+    opacity: 1 !important;
+    width: 16px;
+    height: 16px;
+    margin: 2px 0 0 0 !important;
+    -webkit-appearance: checkbox;
+    appearance: auto;
+    pointer-events: auto;
+}
+
+#mlb2-42724321.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description {
+    margin: 0;
+}
+
+#mlb2-42724321.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::before,
+#mlb2-42724321.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::after {
+    content: none !important;
+}
+
+#mlb2-42766770.ml-form-embedContainer {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* Keep the new MailerLite form compact and visually consistent. */
+#mlb2-42766770.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody,
+#mlb2-42766770.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody {
+    padding: 12px 14px 0 14px !important;
+}
+
+#mlb2-42766770.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent,
+#mlb2-42766770.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent {
+    margin: 0 0 10px 0 !important;
+}
+
+#mlb2-42766770.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-formContent,
+#mlb2-42766770.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow,
+#mlb2-42766770.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions {
+    margin: 0 0 10px 0 !important;
+}
+
+#mlb2-42766770.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit {
+    margin: 0 0 8px 0 !important;
+}
+
+#mlb2-42766770.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow {
+    margin: 0 0 8px 0 !important;
+}
+
+#mlb2-42766770.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent h4,
+#mlb2-42766770.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent h4 {
+    margin: 0 0 8px 0 !important;
+}
+
+/* Force a visible native checkbox for the opt-in row. */
+#mlb2-42766770.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .checkbox {
+    display: flex !important;
+    align-items: flex-start;
+    gap: 10px;
+    min-height: 0;
+    padding-left: 0 !important;
+}
+
+#mlb2-42766770.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow input[type="checkbox"] {
+    position: static !important;
+    z-index: auto !important;
+    opacity: 1 !important;
+    width: 16px;
+    height: 16px;
+    margin: 2px 0 0 0 !important;
+    -webkit-appearance: checkbox;
+    appearance: auto;
+    pointer-events: auto;
+}
+
+#mlb2-42766770.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description {
+    margin: 0;
+}
+
+#mlb2-42766770.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::before,
+#mlb2-42766770.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::after {
+    content: none !important;
 }
 
 .waitlist-microcopy {
@@ -1134,7 +1389,7 @@ nav {
     }
 
     .waitlist-panel {
-        padding: 32px 22px;
+        padding: 16px 14px;
     }
 
     .gallery-card img {
