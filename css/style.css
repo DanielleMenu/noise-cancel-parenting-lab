@@ -88,7 +88,7 @@ color: #1F2328;
 
 .hero {
     text-align: center;
-    padding: 60px 10% 40px;
+    padding: 60px 10% 24px;
 }
 
 .hero h1 {
@@ -172,28 +172,176 @@ text-align: center;
 }
 
 .about-mission {
-max-width: 800px;
-margin: 0 auto;
-text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 16px 10% 14px;
+}
+
+.about-mission > h2 {
+    margin-bottom: 24px;
+}
+
+.method-flow {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: nowrap;
+}
+
+.method-stage {
+    text-align: center;
+    flex: 1;
+    padding: 0 6px;
+    min-width: 0;
+}
+
+.method-stage-name {
+    font-family: Inter, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: #1F2328;
+    margin-bottom: 4px;
+}
+
+.method-stage-text {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: #666;
+}
+
+.method-flow-arrow {
+    font-size: 1.4rem;
+    color: #E59A6D;
+    line-height: 1;
+    margin: 0 2px;
+    flex: 0 0 auto;
+}
+
+@media (max-width: 1000px) {
+    .method-flow {
+        flex-direction: column;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    .method-stage {
+        flex: 0 0 auto;
+        padding: 0;
+    }
+
+    .method-flow-arrow {
+        font-size: 1.4rem;
+        margin: 0;
+        transform: rotate(90deg);
+    }
+}
+
+.transition-section {
+    padding: 16px 10% 14px;
+}
+
+.transition-section > h2 {
+    max-width: 860px;
+    margin: 0 auto 12px;
+}
+
+.transition-copy {
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.transition-copy p {
+    margin: 0 0 10px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.transition-copy p:last-child {
+    margin-bottom: 0;
+}
+
+.products-preview {
+    padding: 14px 10% 12px;
+}
+
+.products-preview > h2 {
+    margin-bottom: 16px;
+}
+
+.philosophy-section {
+    padding: 16px 10% 14px;
+}
+
+.philosophy-section > h2 {
+    max-width: 860px;
+    margin: 0 auto 8px;
+}
+
+.philosophy-subheading {
+    max-width: 860px;
+    margin: 0 auto 14px;
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #1F2328;
+}
+
+.philosophy-card {
+    max-width: 860px;
 }
 
 .about-lab {
     max-width: 900px;
     margin: 0 auto;
-    padding: 20px 10% 10px;
+    padding: 14px 10% 12px;
 }
 
-.about-lab .mission-copy-box {
+.about-lab > h2 {
+    margin-bottom: 12px;
+}
+
+.about-lab-card {
     text-align: left;
 }
 
+.about-lab-positioning {
+    margin: 0 0 22px;
+    font-size: 1.45rem;
+    line-height: 1.35;
+    font-weight: 700;
+    color: #1F2328;
+}
+
+.about-lab-card p {
+    margin-bottom: 18px;
+}
+
+.about-lab-card p:last-child {
+    margin-bottom: 0;
+}
+
 .about-lab-list {
-    margin: 0 0 18px 1.2rem;
+    margin: 0 0 20px 1.2rem;
     padding: 0;
 }
 
 .about-lab-list li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+    line-height: 1.65;
+}
+
+@media (max-width: 900px) {
+    .about-lab-positioning {
+        font-size: 1.25rem;
+    }
 }
 
 .about-mission p {
@@ -1002,6 +1150,43 @@ nav {
 
 .mission-copy-box p:last-child {
     margin-bottom: 0;
+}
+
+.about-mission .mission-copy-box img {
+    display: block;
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.founder-story {
+    padding: 16px 10% 14px;
+}
+
+.founder-story > h2 {
+    max-width: 860px;
+    margin: 0 auto 16px;
+    font-size: 2rem;
+}
+
+.founder-story-card {
+    max-width: 860px;
+}
+
+.founder-story-role {
+    margin: 0 0 8px;
+    font-weight: 600;
+}
+
+.founder-story-role:last-of-type {
+    margin-bottom: 16px;
+}
+
+.founder-story-highlight {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 12px 0 12px;
 }
 
 @media (max-width: 780px) {
