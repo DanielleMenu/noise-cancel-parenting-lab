@@ -1509,6 +1509,248 @@ nav {
     justify-content: center;
 }
 
+.starter-kit-page h1,
+.starter-kit-page h2,
+.starter-kit-page h3,
+.starter-kit-page h4,
+.starter-kit-page h5,
+.starter-kit-page h6 {
+    font-family: Inter, sans-serif;
+}
+
+.starter-shell {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.starter-hero {
+    padding: 56px 10% 28px;
+    text-align: center;
+}
+
+.starter-hero h1 {
+    margin: 0 0 10px;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+}
+
+.starter-tagline {
+    margin: 0 auto 10px;
+    max-width: 640px;
+    font-size: clamp(1.1rem, 2.7vw, 1.5rem);
+    font-weight: 600;
+    color: #1F2328;
+}
+
+.starter-subtitle {
+    margin: 0 auto 20px;
+    max-width: 680px;
+    font-size: 1.02rem;
+    color: #3a3f45;
+}
+
+.starter-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+}
+
+.starter-list li {
+    position: relative;
+    padding-left: 24px;
+    font-size: 1rem;
+}
+
+.starter-list li::before {
+    content: "\2713";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #1F2328;
+    font-weight: 600;
+}
+
+.starter-previews {
+    padding: 22px 10% 24px;
+    text-align: center;
+}
+
+.starter-previews > .starter-shell > h2,
+.starter-who > .starter-shell > h2 {
+    margin: 0 0 16px;
+    font-size: clamp(1.5rem, 3.2vw, 2rem);
+}
+
+.starter-preview-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.starter-preview-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 18px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+    text-align: left;
+}
+
+.starter-pdf-cover {
+    height: 280px;
+    border-radius: 14px;
+    background: #F8F6F2;
+    box-shadow: inset 0 0 0 1px rgba(31, 35, 40, 0.08);
+    overflow: hidden;
+    margin-bottom: 14px;
+}
+
+.starter-pdf-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.starter-preview-card h3 {
+    margin: 0 0 8px;
+    font-size: 1.15rem;
+}
+
+.starter-preview-card p {
+    margin: 0;
+    color: #4A4F55;
+    line-height: 1.55;
+}
+
+.starter-who {
+    padding: 18px 10% 14px;
+    text-align: center;
+}
+
+.starter-who-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    text-align: left;
+}
+
+.starter-who-grid li {
+    background: #fff;
+    border-radius: 14px;
+    padding: 12px 14px 12px 38px;
+    position: relative;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+}
+
+.starter-who-grid li::before {
+    content: "\2713";
+    position: absolute;
+    left: 14px;
+    top: 12px;
+    color: #1F2328;
+    font-weight: 700;
+}
+
+.starter-capture {
+    padding: 24px 10% 58px;
+}
+
+.starter-capture-box {
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px 28px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.starter-capture-box h2 {
+    margin: 0 0 10px;
+}
+
+.starter-capture-box > p {
+    margin: 0 auto 14px;
+    max-width: 620px;
+    color: #3f4349;
+}
+
+.starter-capture-box #mlb2-42769341 .ml-form-embedContent {
+    display: none !important;
+}
+
+.starter-form {
+    max-width: 620px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+}
+
+.starter-form input {
+    flex: 1 1 auto;
+    min-width: 0;
+    border: 1px solid rgba(31, 35, 40, 0.18);
+    border-radius: 999px;
+    padding: 12px 14px;
+    font: inherit;
+    color: #1F2328;
+    background: #fff;
+}
+
+.starter-form button {
+    border: none;
+    border-radius: 999px;
+    background: #E59A6D;
+    color: #fff;
+    padding: 12px 20px;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.starter-microcopy {
+    margin: 12px auto 0;
+    max-width: 560px;
+    font-size: 0.92rem;
+    color: #666;
+    text-align: center;
+}
+
+@media (max-width: 760px) {
+    .starter-hero {
+        padding-top: 30px;
+    }
+
+    .starter-list {
+        width: 100%;
+    }
+
+    .starter-capture-box {
+        padding: 24px 18px;
+    }
+
+    .starter-preview-grid,
+    .starter-who-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .starter-pdf-cover {
+        height: 220px;
+    }
+
+    .starter-form {
+        flex-direction: column;
+    }
+
+    .starter-form button {
+        width: 100%;
+    }
+}
+
 .site-footer .footer-social {
     margin: 18px 0;
 }
