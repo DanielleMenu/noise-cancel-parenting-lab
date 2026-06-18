@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400;500;600&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
 margin: 0;
 background: #F8F6F2;
@@ -667,6 +671,475 @@ nav {
         height: auto;
     }
 
+}
+
+.product-hero {
+    padding: 80px 10% 40px;
+}
+
+.product-hero-layout {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.hero-copy {
+    text-align: left;
+}
+
+.hero-copy h1 {
+    text-align: left;
+}
+
+.eyebrow {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #B8734E;
+    margin-bottom: 12px;
+}
+
+.hero-actions {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-pills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.hero-pills span {
+    background: #fff;
+    color: #1F2328;
+    border-radius: 999px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.hero-highlights {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.hero-highlights li {
+    background: #fff;
+    border-radius: 999px;
+    padding: 10px 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+    font-size: 0.95rem;
+}
+
+.hero-visual {
+    position: relative;
+}
+
+.hero-visual img {
+    width: 100%;
+    border-radius: 24px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.hero-badge {
+    position: absolute;
+    bottom: -12px;
+    right: 14px;
+    background: #fff;
+    border-radius: 999px;
+    padding: 12px 18px;
+    font-size: 0.9rem;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.section-heading {
+    max-width: 900px;
+    margin: 0 auto 32px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    margin-bottom: 0;
+}
+
+.product-gallery {
+    padding: 40px 10% 60px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    align-items: start;
+}
+
+.gallery-card {
+    background: #fff;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.06);
+}
+
+.gallery-card--offset {
+    transform: translateY(32px);
+}
+
+.gallery-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    height: auto;
+    object-fit: cover;
+}
+
+.gallery-card div {
+    padding: 24px;
+}
+
+.gallery-card h3 {
+    margin: 0 0 10px;
+    font-size: 1.4rem;
+}
+
+.gallery-card p {
+    margin: 0;
+}
+
+.comparison-section {
+    padding: 0 10% 60px;
+}
+
+.comparison-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.comparison-card {
+    border-radius: 22px;
+    padding: 32px;
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.06);
+}
+
+.comparison-card--before {
+    background: #fff7f0;
+}
+
+.comparison-card--after {
+    background: #f7f5ee;
+}
+
+.comparison-label {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #B8734E;
+    margin-bottom: 10px;
+}
+
+.comparison-card h3 {
+    margin: 0 0 12px;
+    font-size: 1.4rem;
+}
+
+.comparison-card p {
+    margin: 0;
+    color: #444;
+    line-height: 1.7;
+}
+
+.comparison-points {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.comparison-points span,
+.comparison-pill-row span {
+    background: #fff;
+    border-radius: 999px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1F2328;
+}
+
+.comparison-pill-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.who-section {
+    max-width: 1100px;
+}
+
+.checklist-panel {
+    background: #fff;
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
+}
+
+.checklist-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 14px;
+}
+
+.checklist-list li {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #1F2328;
+    padding-left: 0;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 18px;
+}
+
+.feature-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 24px;
+    text-align: left;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
+}
+
+.feature-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #F9E4D4;
+    color: #B8734E;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.feature-card h3 {
+    margin: 0 0 10px;
+    font-size: 1.1rem;
+}
+
+.feature-card p {
+    margin: 0;
+}
+
+.waitlist-section {
+    padding: 40px 10% 60px;
+}
+
+.waitlist-panel {
+    background: #fff;
+    border-radius: 24px;
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 32px;
+    padding: 48px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.06);
+    align-items: center;
+}
+
+.waitlist-copy {
+    text-align: left;
+}
+
+.waitlist-copy h2 {
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.waitlist-form-wrap {
+    max-width: 460px;
+    margin-left: auto;
+}
+
+.waitlist-microcopy {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.founder-note-section {
+    padding: 0 10% 60px;
+}
+
+.founder-note-card {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 22px;
+    padding: 40px;
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.06);
+}
+
+.founder-note-card h2 {
+    margin: 0 0 18px;
+    text-align: left;
+}
+
+.founder-note-card p {
+    margin: 0 0 16px;
+    color: #444;
+    line-height: 1.8;
+}
+
+.founder-note-card p:last-child {
+    margin-bottom: 0;
+}
+
+.faq-section {
+    padding: 0 10% 80px;
+}
+
+.faq-list {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    gap: 14px;
+}
+
+.faq-item {
+    background: #fff;
+    border-radius: 16px;
+    padding: 18px 22px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item p {
+    margin: 12px 0 0;
+    color: #555;
+}
+
+.site-footer {
+    background: #fff;
+    padding: 60px 10%;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.footer-brand p {
+    margin: 0;
+    color: #666;
+}
+
+.footer-logo-link .logo {
+    justify-content: center;
+}
+
+.site-footer .footer-social {
+    margin: 18px 0;
+}
+
+.site-footer .footer-policies {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+    .product-hero-layout,
+    .waitlist-panel,
+    .gallery-grid,
+    .comparison-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-copy,
+    .waitlist-copy {
+        text-align: center;
+    }
+
+    .hero-copy h1,
+    .waitlist-copy h2 {
+        text-align: center;
+    }
+
+    .hero-visual {
+        max-width: 520px;
+        margin: 0 auto;
+    }
+
+    .gallery-card--offset {
+        transform: none;
+    }
+
+    .gallery-card img {
+        aspect-ratio: 16 / 11;
+    }
+
+    .waitlist-form-wrap {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .product-hero {
+        padding-top: 54px;
+    }
+
+    .product-gallery,
+    .waitlist-section,
+    .faq-section,
+    .site-footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hero-highlights {
+        justify-content: center;
+    }
+
+    .waitlist-panel {
+        padding: 32px 22px;
+    }
+
+    .gallery-card img {
+        height: 220px;
+    }
 }
 
 
