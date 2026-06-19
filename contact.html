@@ -3,17 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 | Noise Cancel Parenting Lab</title>
-    <meta name="description" content="The page you requested could not be found. Head back home or explore the Baby Registry Auditor.">
+    <title>Contact | Noise Cancel Parenting Lab</title>
+    <meta name="description" content="Questions, feedback, ideas, or collaboration inquiries for Noise Cancel Parenting Lab.">
     <meta name="p:domain_verify" content="9ccd1b0f23c24447b9913abafd8f6694"/>
-    <link rel="icon" href="images/favicon.ico" sizes="any">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192x192.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="images/favicon-192x192.png">
     <link rel="stylesheet" href="css/style.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EPQ4CZ094X"></script>
     <script>
@@ -22,8 +14,17 @@
       gtag('js', new Date());
       gtag('config', 'G-EPQ4CZ094X');
     </script>
+    <link rel="icon" href="images/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicon-192x192.png">
 </head>
-<body class="home-page error-page">
+
+<body class="contact-page">
 
 <header>
 <nav>
@@ -60,28 +61,43 @@
 </nav>
 </header>
 
-<main class="error-main">
-    <section class="error-hero" aria-labelledby="error-title">
-        <span class="eyebrow">404 Error</span>
-        <h1 id="error-title">This page failed the sanity check.</h1>
-        <p class="error-copy">
-            We looked for this page and couldn't find it. It may have moved, been removed, or never existed in the first place. Fortunately, you don't need to spend hours researching where it went.
-        </p>
+<main class="contact-page-main">
+    <section class="contact-hero" aria-labelledby="contact-title">
+        <span class="eyebrow">CONTACT</span>
+        <h1 id="contact-title">Let's Keep It Simple.</h1>
+        <p>Questions, feedback, ideas, or collaboration inquiries?</p>
+        <p>The easiest way to get in touch is by email.</p>
+    </section>
 
-        <div class="error-visual" aria-hidden="true">
-            <div class="error-stage">Page Not Found</div>
-            <div class="error-arrow">→</div>
-            <div class="error-stage">Sanity Check</div>
-            <div class="error-arrow">→</div>
-            <div class="error-stage">Back To Clarity</div>
+    <section class="contact-card-section" aria-labelledby="email-card-title">
+        <div class="card contact-card">
+            <p class="contact-card-label" id="email-card-title">EMAIL</p>
+            <p class="contact-email">noisecancelparentinglab[at]gmail[dot]com</p>
+            <p class="contact-supporting">Whether you have a question about a tool, feedback on a resource, or an idea you'd like to share, I'd love to hear from you.</p>
+            <button type="button" class="button contact-copy-button" data-email="noisecancelparentinglab@gmail.com">Copy Email</button>
+            <p class="contact-copy-status" aria-live="polite"></p>
+        </div>
+    </section>
+
+    <section class="contact-follow" aria-labelledby="follow-title">
+        <div class="contact-section-heading">
+            <span class="eyebrow">Follow Along</span>
+            <h2 id="follow-title">Follow Along</h2>
+            <p>Practical tools, calmer decisions, and occasional updates from the lab.</p>
         </div>
 
-        <div class="error-actions">
-            <a class="button" href="/">Back Home</a>
-            <a class="button button-secondary" href="/baby-registry-auditor.html">Explore the Baby Registry Auditor</a>
+        <div class="contact-social-links" aria-label="Social links">
+            <a href="https://www.instagram.com/noisecancelparentinglab/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.pinterest.com/noisecancelparentinglab/" target="_blank" rel="noopener noreferrer">Pinterest</a>
         </div>
+    </section>
 
-        <p class="error-note">Even the internet occasionally needs a better filter.</p>
+    <section class="contact-closing" aria-labelledby="closing-title">
+        <div class="contact-section-heading contact-closing-card">
+            <h2 id="closing-title">Every Tool Starts With a Question.</h2>
+            <p>Noise Cancel Parenting Lab exists to help first-time parents cut through recommendations, reduce decision fatigue, and make more intentional decisions.</p>
+            <p>Questions, suggestions, and feedback help shape what gets built next.</p>
+        </div>
     </section>
 </main>
 
@@ -119,6 +135,24 @@
         <a href="refund.html">Refund Policy</a>
     </div>
 </footer>
+
+<script>
+    const copyButton = document.querySelector('.contact-copy-button');
+    const copyStatus = document.querySelector('.contact-copy-status');
+    const emailAddress = copyButton?.dataset.email;
+
+    if (copyButton && emailAddress) {
+        copyButton.addEventListener('click', async () => {
+            try {
+                await navigator.clipboard.writeText(emailAddress);
+                copyButton.textContent = 'Copied';
+                copyStatus.textContent = 'Email copied to clipboard.';
+            } catch (error) {
+                copyStatus.textContent = 'Copy failed. Email: noisecancelparentinglab@gmail.com';
+            }
+        });
+    }
+</script>
 
 </body>
 </html>
