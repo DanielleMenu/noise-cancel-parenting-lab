@@ -2697,6 +2697,10 @@ nav {
         background: #F8F6F2;
     }
 
+    .mobile-menu a[href="free-starter-kit.html"] {
+        display: none;
+    }
+
     .mobile-menu-social {
         display: flex;
         gap: 10px;
