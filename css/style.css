@@ -2722,3 +2722,23 @@ nav {
         display: block;
     }
 }
+
+/* Safety override: prevent any duplicate right-side nav blocks on mobile */
+@media (max-width: 768px) {
+    .logo span {
+        display: none !important;
+    }
+
+    nav > :not(.logo-link):not(.nav-toggle):not(.mobile-menu) {
+        display: none !important;
+    }
+
+    nav > .mobile-menu {
+        display: none !important;
+    }
+
+    nav > .mobile-menu.is-open {
+        display: flex !important;
+        flex-direction: column;
+    }
+}
