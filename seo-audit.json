@@ -1,0 +1,287 @@
+﻿{
+    "generatedAt":  "2026-06-21T09:24:10",
+    "pages":  [
+                  {
+                      "file":  "404.html",
+                      "metaDescription":  "The page you requested could not be found. Head back home or explore the Baby Registry Auditor.",
+                      "metaDescriptionLength":  95,
+                      "h1Count":  1,
+                      "h1Values":  [
+                                       "This page failed the sanity check."
+                                   ],
+                      "canonical":  "",
+                      "isRedirectPage":  false,
+                      "linksTo":  [
+                                      "index.html",
+                                      "products.html",
+                                      "about.html",
+                                      "contact.html",
+                                      "free-starter-kit.html",
+                                      "baby-registry-auditor.html",
+                                      "privacy.html",
+                                      "terms.html",
+                                      "refund.html"
+                                  ]
+                  },
+                  {
+                      "file":  "about.html",
+                      "metaDescription":  "",
+                      "metaDescriptionLength":  0,
+                      "h1Count":  1,
+                      "h1Values":  [
+                                       "Parenting Doesn\u0027t Need More Opinions.It Needs Better Filters."
+                                   ],
+                      "canonical":  "",
+                      "isRedirectPage":  false,
+                      "linksTo":  [
+                                      "index.html",
+                                      "products.html",
+                                      "about.html",
+                                      "contact.html",
+                                      "free-starter-kit.html",
+                                      "privacy.html",
+                                      "terms.html",
+                                      "refund.html"
+                                  ]
+                  },
+                  {
+                      "file":  "baby-registry-auditor.html",
+                      "metaDescription":  "",
+                      "metaDescriptionLength":  0,
+                      "h1Count":  0,
+                      "h1Values":  [
+
+                                   ],
+                      "canonical":  "products.html",
+                      "isRedirectPage":  true,
+                      "linksTo":  {
+
+                                  }
+                  },
+                  {
+                      "file":  "contact.html",
+                      "metaDescription":  "Questions, feedback, ideas, or collaboration inquiries for Noise Cancel Parenting Lab.",
+                      "metaDescriptionLength":  86,
+                      "h1Count":  1,
+                      "h1Values":  [
+                                       "Let\u0027s Keep It Simple."
+                                   ],
+                      "canonical":  "",
+                      "isRedirectPage":  false,
+                      "linksTo":  [
+                                      "index.html",
+                                      "products.html",
+                                      "about.html",
+                                      "contact.html",
+                                      "free-starter-kit.html",
+                                      "privacy.html",
+                                      "terms.html",
+                                      "refund.html"
+                                  ]
+                  },
+                  {
+                      "file":  "free-starter-kit.html",
+                      "metaDescription":  "Download two practical tools to make calmer baby registry decisions.",
+                      "metaDescriptionLength":  68,
+                      "h1Count":  1,
+                      "h1Values":  [
+                                       "Free Starter Kit"
+                                   ],
+                      "canonical":  "",
+                      "isRedirectPage":  false,
+                      "linksTo":  [
+                                      "index.html",
+                                      "products.html",
+                                      "free-starter-kit.html",
+                                      "about.html",
+                                      "contact.html",
+                                      "privacy.html",
+                                      "terms.html",
+                                      "refund.html"
+                                  ]
+                  },
+                  {
+                      "file":  "index.html",
+                      "metaDescription":  "Practical tools for first-time parents who want less guilt, less overwhelm, and fewer expensive mistakes.",
+                      "metaDescriptionLength":  105,
+                      "h1Count":  1,
+                      "h1Values":  [
+                                       "Filter the Noise.\r\n            Keep Your Sanity."
+                                   ],
+                      "canonical":  "",
+                      "isRedirectPage":  false,
+                      "linksTo":  [
+                                      "index.html",
+                                      "products.html",
+                                      "about.html",
+                                      "contact.html",
+                                      "free-starter-kit.html",
+                                      "privacy.html",
+                                      "terms.html",
+                                      "refund.html"
+                                  ]
+                  },
+                  {
+                      "file":  "privacy.html",
+                      "metaDescription":  "",
+                      "metaDescriptionLength":  0,
+                      "h1Count":  0,
+                      "h1Values":  [
+
+                                   ],
+                      "canonical":  "",
+                      "isRedirectPage":  false,
+                      "linksTo":  [
+                                      "index.html",
+                                      "products.html",
+                                      "about.html",
+                                      "contact.html",
+                                      "free-starter-kit.html",
+                                      "privacy.html",
+                                      "terms.html",
+                                      "refund.html"
+                                  ]
+                  },
+                  {
+                      "file":  "products.html",
+                      "metaDescription":  "A practical spreadsheet that helps first-time parents separate baby essentials from marketing noise.",
+                      "metaDescriptionLength":  100,
+                      "h1Count":  1,
+                      "h1Values":  [
+                                       "Make every registry choice intentional."
+                                   ],
+                      "canonical":  "",
+                      "isRedirectPage":  false,
+                      "linksTo":  [
+                                      "index.html",
+                                      "products.html",
+                                      "about.html",
+                                      "contact.html",
+                                      "free-starter-kit.html",
+                                      "privacy.html",
+                                      "terms.html",
+                                      "refund.html"
+                                  ]
+                  },
+                  {
+                      "file":  "refund.html",
+                      "metaDescription":  "",
+                      "metaDescriptionLength":  0,
+                      "h1Count":  0,
+                      "h1Values":  [
+
+                                   ],
+                      "canonical":  "",
+                      "isRedirectPage":  false,
+                      "linksTo":  [
+                                      "index.html",
+                                      "products.html",
+                                      "about.html",
+                                      "contact.html",
+                                      "free-starter-kit.html",
+                                      "privacy.html",
+                                      "terms.html",
+                                      "refund.html"
+                                  ]
+                  },
+                  {
+                      "file":  "starter-kit-downloads.html",
+                      "metaDescription":  "Download your Free Starter Kit tools from Noise Cancel Parenting Lab.",
+                      "metaDescriptionLength":  69,
+                      "h1Count":  1,
+                      "h1Values":  [
+                                       "Your downloads are ready."
+                                   ],
+                      "canonical":  "",
+                      "isRedirectPage":  false,
+                      "linksTo":  [
+                                      "index.html",
+                                      "products.html",
+                                      "free-starter-kit.html",
+                                      "about.html",
+                                      "contact.html",
+                                      "baby-registry-auditor.html",
+                                      "privacy.html",
+                                      "terms.html",
+                                      "refund.html"
+                                  ]
+                  },
+                  {
+                      "file":  "terms.html",
+                      "metaDescription":  "",
+                      "metaDescriptionLength":  0,
+                      "h1Count":  0,
+                      "h1Values":  [
+
+                                   ],
+                      "canonical":  "",
+                      "isRedirectPage":  false,
+                      "linksTo":  [
+                                      "index.html",
+                                      "products.html",
+                                      "about.html",
+                                      "contact.html",
+                                      "free-starter-kit.html",
+                                      "privacy.html",
+                                      "terms.html",
+                                      "refund.html"
+                                  ]
+                  }
+              ],
+    "redirectPages":  "baby-registry-auditor.html",
+    "incomingLinksToRedirectPages":  [
+                                         {
+                                             "redirectPage":  "baby-registry-auditor.html",
+                                             "incomingCount":  2,
+                                             "incomingFrom":  [
+                                                                  "404.html",
+                                                                  "starter-kit-downloads.html"
+                                                              ]
+                                         }
+                                     ],
+    "duplicatesByBodyHash":  [
+
+                             ],
+    "largeImagesOver300KB":  [
+                                 {
+                                     "path":  "C:\\Users\\ydool\\OneDrive\\Documents\\תיקיית פרילנס\\Noise Cancel Parenting Lab\\noise-cancel-parenting-lab\\images\\anti marketing checklist demo.png",
+                                     "sizeKB":  823.8
+                                 },
+                                 {
+                                     "path":  "C:\\Users\\ydool\\OneDrive\\Documents\\תיקיית פרילנס\\Noise Cancel Parenting Lab\\noise-cancel-parenting-lab\\images\\demo1.png",
+                                     "sizeKB":  425
+                                 },
+                                 {
+                                     "path":  "C:\\Users\\ydool\\OneDrive\\Documents\\תיקיית פרילנס\\Noise Cancel Parenting Lab\\noise-cancel-parenting-lab\\images\\favicon.png",
+                                     "sizeKB":  1318.8
+                                 },
+                                 {
+                                     "path":  "C:\\Users\\ydool\\OneDrive\\Documents\\תיקיית פרילנס\\Noise Cancel Parenting Lab\\noise-cancel-parenting-lab\\images\\logo.png",
+                                     "sizeKB":  2041.4
+                                 },
+                                 {
+                                     "path":  "C:\\Users\\ydool\\OneDrive\\Documents\\תיקיית פרילנס\\Noise Cancel Parenting Lab\\noise-cancel-parenting-lab\\images\\method.png",
+                                     "sizeKB":  1076
+                                 },
+                                 {
+                                     "path":  "C:\\Users\\ydool\\OneDrive\\Documents\\תיקיית פרילנס\\Noise Cancel Parenting Lab\\noise-cancel-parenting-lab\\images\\minimal viable baby setup demo.png",
+                                     "sizeKB":  304.4
+                                 },
+                                 {
+                                     "path":  "C:\\Users\\ydool\\OneDrive\\Documents\\תיקיית פרילנס\\Noise Cancel Parenting Lab\\noise-cancel-parenting-lab\\images\\parenting-noise.png",
+                                     "sizeKB":  2765.5
+                                 },
+                                 {
+                                     "path":  "C:\\Users\\ydool\\OneDrive\\Documents\\תיקיית פרילנס\\Noise Cancel Parenting Lab\\noise-cancel-parenting-lab\\images\\Registry waitlist welcome email.png",
+                                     "sizeKB":  1794.2
+                                 },
+                                 {
+                                     "path":  "C:\\Users\\ydool\\OneDrive\\Documents\\תיקיית פרילנס\\Noise Cancel Parenting Lab\\noise-cancel-parenting-lab\\images\\starter kit email image.png",
+                                     "sizeKB":  1901.9
+                                 },
+                                 {
+                                     "path":  "C:\\Users\\ydool\\OneDrive\\Documents\\תיקיית פרילנס\\Noise Cancel Parenting Lab\\noise-cancel-parenting-lab\\images\\welcome email image.png",
+                                     "sizeKB":  1845.2
+                                 }
+                             ]
+}
