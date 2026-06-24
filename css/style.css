@@ -53,6 +53,19 @@ text-decoration: none;
 color: #1F2328;
 }
 
+.nav-links a.nav-sub-link {
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 1px solid #ded8ce;
+    font-size: 0.92rem;
+    color: #5f6368;
+}
+
+.nav-links a.nav-sub-link:hover,
+.nav-links a.nav-sub-link:focus {
+    color: #1F2328;
+}
+
 .nav-social {
     display: flex;
     gap: 10px;
@@ -3294,8 +3307,10 @@ body.lightbox-open {
         background: #F8F6F2;
     }
 
-    .mobile-menu a[href="free-starter-kit.html"] {
-        display: none;
+    .mobile-menu a.nav-sub-link {
+        padding-left: 26px;
+        font-size: 0.93rem;
+        color: #5f6368;
     }
 
     .mobile-menu-social {
