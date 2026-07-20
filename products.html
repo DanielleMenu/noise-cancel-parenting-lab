@@ -704,6 +704,149 @@
 
 </header>
 
+<style>
+  .product-hero .hero-actions {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .product-hero-tertiary {
+    margin-top: 12px;
+    text-align: center;
+  }
+
+  .product-hero-tertiary .hero-tertiary-caption {
+    margin: 0 0 2px;
+    font-size: 0.9rem;
+    color: #7B7F85;
+  }
+
+  .product-hero-tertiary .hero-tertiary-link {
+    font-size: 0.95rem;
+    color: #E59A6D;
+    text-decoration: none;
+  }
+
+  .product-hero-tertiary .hero-tertiary-link:hover,
+  .product-hero-tertiary .hero-tertiary-link:focus {
+    text-decoration: underline;
+  }
+
+  .beta-invite-section {
+    padding: 10px 10% 6px;
+  }
+
+  .beta-invite-card {
+    max-width: 760px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #ece7e0;
+    border-radius: 18px;
+    padding: 24px 22px;
+    text-align: center;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.04);
+  }
+
+  .beta-invite-card h2 {
+    margin: 0 0 10px;
+    font-size: clamp(1.6rem, 3vw, 2.05rem);
+    line-height: 1.15;
+  }
+
+  .beta-invite-card p {
+    margin: 0 0 12px;
+    color: #4A4F55;
+  }
+
+  .beta-invite-card .beta-invite-link {
+    display: inline-block;
+    margin-top: 2px;
+    font-weight: 700;
+    color: #E59A6D;
+    text-decoration: none;
+  }
+
+  .beta-invite-card .beta-invite-link:hover,
+  .beta-invite-card .beta-invite-link:focus {
+    text-decoration: underline;
+  }
+
+  .beta-invite-card .beta-invite-note {
+    margin: 10px 0 0;
+    font-size: 0.92rem;
+    color: #7B7F85;
+    font-style: italic;
+  }
+
+  .product-page .beta-invite-section {
+    padding-bottom: 18px;
+    border-bottom: 1px solid #ece7e0;
+    margin-bottom: 10px;
+  }
+
+  .product-page .waitlist-section {
+    padding-top: 4px;
+    padding-bottom: 8px;
+  }
+
+  .product-page .waitlist-panel {
+    max-width: 640px;
+    gap: 2px;
+    padding: 14px 14px 12px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
+  }
+
+  .product-page .waitlist-copy h2 {
+    font-size: clamp(2rem, 4.4vw, 2.5rem);
+    line-height: 1.06;
+    margin: 0 0 6px;
+  }
+
+  .product-page .waitlist-copy p {
+    margin: 0;
+  }
+
+  .product-page .waitlist-copy p + p {
+    margin-top: 8px;
+  }
+
+  .product-page .waitlist-form-wrap {
+    max-width: 360px;
+  }
+
+  .product-page #mlb2-42724321.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody,
+  .product-page #mlb2-42724321.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody {
+    padding: 10px 12px 0 12px !important;
+  }
+
+  .product-page #mlb2-42724321.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent,
+  .product-page #mlb2-42724321.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent {
+    margin: 0 0 8px 0 !important;
+  }
+
+  @media (max-width: 768px) {
+    .product-page .beta-invite-section {
+      padding-bottom: 14px;
+      margin-bottom: 8px;
+    }
+
+    .product-page .waitlist-panel {
+      max-width: 560px;
+      gap: 2px;
+      padding: 12px;
+    }
+
+    .product-page .waitlist-copy h2 {
+      font-size: clamp(1.7rem, 6.2vw, 2rem);
+      margin-bottom: 4px;
+    }
+
+    .product-page .waitlist-form-wrap {
+      max-width: 340px;
+    }
+  }
+</style>
+
 <section class="hero product-hero" id="top">
     <div class="product-hero-layout">
         <div class="hero-copy">
@@ -717,10 +860,12 @@
                 Sort products into Buy, Grab from the River, Wait &amp; See, or Skip—before they take over your registry, budget, and home.
             </p>
             <div class="hero-actions">
-                <a href="#waitlist-section" class="button scroll-link">Join the Waitlist</a>
+              <a href="apply-to-be-a-beta-tester.html" class="button">Apply for Beta Access</a>
+                <a href="#how-it-works" class="button button-secondary scroll-link">See How It Works</a>
             </div>
-            <div class="hero-pills" aria-label="Jump to sections">
-              <a href="#how-it-works" class="scroll-link">See How It Works</a>
+            <div class="product-hero-tertiary">
+              <p class="hero-tertiary-caption">Not ready to apply?</p>
+              <a href="#waitlist-section" class="hero-tertiary-link scroll-link">Join the waitlist instead</a>
             </div>
 
         </div>
@@ -883,17 +1028,22 @@
     </div>
 </section>
 
+<section class="beta-invite-section" aria-label="Beta program invitation">
+  <div class="beta-invite-card">
+    <h2>Want to help shape the first version?</h2>
+    <p>I'm currently looking for <strong>5 first-time parents</strong> who are expecting their first baby to test the Baby Registry Auditor before launch.</p>
+    <a href="apply-to-be-a-beta-tester.html" class="beta-invite-link">Apply for Beta Access &rarr;</a>
+    <p class="beta-invite-note">Applications take about one minute.</p>
+  </div>
+</section>
+
 <section class="waitlist-section" id="waitlist-section">
     <div class="waitlist-panel">
         <div class="waitlist-copy">
             <span class="eyebrow">Early Access</span>
-            <h2>Join the Waitlist</h2>
+            <h2>Prefer to wait for the public release?</h2>
             <p>
-              Be the first to know when the Baby Registry Auditor launches.
-            </p>
-            <p>
-              A practical framework for helping first-time parents decide what to buy,
-what to borrow, what to postpone, and what to skip.
+              Join the waitlist and I'll let you know when the Baby Registry Auditor launches.
             </p>
         </div>
 

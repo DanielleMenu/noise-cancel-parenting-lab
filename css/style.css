@@ -612,6 +612,42 @@ text-align: center;
     flex-wrap: wrap;
 }
 
+.decision-beta-inline {
+    margin-top: 16px;
+    padding-top: 14px;
+    text-align: center;
+    position: relative;
+}
+
+.decision-beta-inline::before {
+    content: "";
+    display: block;
+    width: 66%;
+    max-width: 320px;
+    margin: 0 auto 14px;
+    border-top: 1px solid #ebe5dd;
+}
+
+.decision-beta-label {
+    margin: 0;
+    font-size: 0.88rem;
+    color: #6e7177;
+}
+
+.decision-beta-link {
+    display: inline-block;
+    margin-top: 3px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #E59A6D;
+    text-decoration: none;
+}
+
+.decision-beta-link:hover,
+.decision-beta-link:focus {
+    text-decoration: underline;
+}
+
 .decision-secondary-link {
     color: #1F2328;
     text-decoration: underline;
